@@ -94,14 +94,41 @@
             </div>
         </nav>
     </header>
-    <section class="carts w-full flex px-1 flex-col relative bg-[#E3E6E6]">
+    <section class="carts w-full flex px-1 flex-col relative bg-[#E3E6E6] overflow-hidden">
         <div class="slider absolute top-0 left-0 z-0 w-full h-[70vh]">
-            <img src="./Images/J24_P3B_GW_PC_EventHero_NTA_1x_V2._CB543524088_.jpg"
-                class="w-full h-full object-cover object-top" alt="">
+            <div class="slider-scroll absolute h-full w-full">
+                <img src="./Images/J24_P3B_GW_PC_EventHero_NTA_1x_V2._CB543524088_.jpg"
+                    class="w-full h-full absolute object-cover object-top slider-img transition-transform duration-500"
+                    alt="">
+                <img src="./Images/3A_3B_PC_Hero_3000x1200_1._CB543546740_.jpg"
+                    class="w-full h-full absolute object-cover object-top slider-img transition-transform duration-500"
+                    alt="">
+                <img src="./Images/3A_PC_Hero_3000x1200._CB543500726_.jpg"
+                    class="w-full h-full absolute object-cover object-top slider-img transition-transform duration-500"
+                    alt="">
+                <img src="./Images/3A_PC_Hero_3000x1200_2._CB543500726_.jpg"
+                    class="w-full h-full absolute object-cover object-top slider-img transition-transform duration-500"
+                    alt="">
+                <img src="./Images/3B-Pc-Hero-01._CB543504484_.jpg"
+                    class="w-full h-full absolute object-cover object-top slider-img transition-transform duration-500"
+                    alt="">
+                <img src="./Images/3B_PC_Hero_3000x1200_01._CB543525778_.jpg"
+                    class="w-full h-full absolute object-cover object-top slider-img transition-transform duration-500"
+                    alt="">
+                <img src="./Images/Ambient_PC1x_Hero_1500x600._CB543711654_.jpg"
+                    class="w-full h-full absolute object-cover object-top slider-img transition-transform duration-500"
+                    alt="">
+                <img src="./Images/Skincare._CB543501798_.jpg"
+                    class="w-full h-full absolute object-cover object-top slider-img transition-transform duration-500"
+                    alt="">
+            </div>
             <div class="absolute top-0 left-0 h-full w-full z-10"
                 style="background : linear-gradient(to bottom , transparent ,transparent, #E3E6E6)"></div>
         </div>
-        <div class="switch h-64 z-20"></div>
+        <div class="switch h-64 z-20 text-white flex items-center justify-between max-w-[1100px] w-full mx-auto">
+            <div class="material-icons cursor-pointer" onclick="left()">arrow_back_ios_new</div>
+            <div class="material-icons rotate-180 cursor-pointer" onclick="right()">arrow_back_ios_new</div>
+        </div>
         <div class="carts w-full mb-4 z-20 px-4 grid grid-cols-4 gap-5">
             <div class="items bg-white px-4 py-3 flex flex-col w-full rounded-sm shadow-md">
                 <h2 class="title font-semibold text-[20px] mb-2">New deals added everyday</h2>
@@ -434,5 +461,6 @@
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
